@@ -1,0 +1,70 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(192, 229, 239)
+}
+
+left {
+
+  display: inline-block;
+  position: absolute;
+  left:34px;
+  top: 20px;
+}
+.left img {
+    width: 100px;
+    filter: invert();
+}
+.left div {
+    text-align: center;
+    line-height: 1;
+    font-size: 40px;
+}
+.mid {
+    display: block;
+    width: 44%;
+    margin: 25px auto;
+
+}
+
+.right {
+    position: absolute;
+    right:34px;
+    top: 34px;
+
+  display: inline-block;
+
+}
+.navbar {
+    display: inline-block;
+
+}
+
+.navbar li{
+    display: inline-block;
+    font-size:25px;
+}
+
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+
+}
+.navbar li a:hover, .navbar li a.active{
+    color: grey;
+    text-decoration: underline;
+}
+
+.btn {
+    margin: 0px 9px;
+    background-color: transparent;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2', cursive;
+}

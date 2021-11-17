@@ -1,0 +1,11 @@
+.container{
+    margin-top: 100px;
+    display: inline-block;
+}
+.product-box{
+
+    height: 10rem;
+    width: 10rem;
+    background-color: rebeccapurple;
+    margin:10px;
+}
