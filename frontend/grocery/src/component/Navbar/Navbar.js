@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import "./Navbar.css";
+import './Navbar.css';
 
 const NavBar = () => {
   return (
@@ -16,34 +16,44 @@ const NavBar = () => {
         <div className="menu-link">
           <ul>
             <li>
-              <a className="header-section" href="#">Home</a>
+              <a className="header-section" href="/">
+                Home
+              </a>
             </li>
             <li>
-              <a className="header-section" href="#">About Us</a>
+              <a className="header-section" href="/About">
+                About Us
+              </a>
             </li>
             <li>
-              <a className="header-section" href="#">Contact Us</a>
+              <a className="header-section" href="/contact">
+                Contact Us
+              </a>
             </li>
           </ul>
         </div>
         <div className="login">
-        <ul> 
-          <li>
-              <a className="header-section" href="#">Login</a>
-          </li>
-          <li>
-              <a className="header-section" href="#">SignUp</a>
-          </li>
-        </ul>
-            
+          <ul>
+            <li>
+              <a className="header-section" href="/login">
+                Login
+              </a>
+            </li>
+            <li>
+              <a className="header-section" href="/signUp">
+                SignUp
+              </a>
+            </li>
+          </ul>
         </div>
         <div className="Cart">
-        <ul> 
-          <li>
-              <a className="header-section" href="#">Cart</a>
-          </li>
-        </ul>
-            
+          <ul>
+            <li>
+              <a className="header-section" href="/cart">
+                Cart
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </>

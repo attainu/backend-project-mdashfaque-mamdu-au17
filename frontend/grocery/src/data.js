@@ -1,0 +1,85 @@
+const data = {
+  products: [
+    {
+      _id: '1',
+      name: 'Dark Fantasy Choco Fills',
+      category: 'Cookies',
+      image: '/images/p1.jpg',
+      price: 110,
+      brand: 'Dark Fantasy',
+      description: 'Hand made Biscuits',
+    },
+
+    {
+      _id: '2',
+      name: 'Sunfeast Dark Fantasy Coffee Fills',
+      category: 'Cookies',
+      image: '/images/p2.jpg',
+      price: 27,
+      brand: 'Dark Fantasy',
+      description: 'Hand made Biscuits',
+    },
+
+    {
+      _id: '3',
+      name: 'Ashirvaad Atta with Multigrains, 5kg',
+      category: 'Aata',
+      image: '/images/p3.jpg',
+      price: 291,
+      brand: 'Aashirvaad',
+      description: 'Made with the choicest grains',
+    },
+
+    {
+      _id: '4',
+      name: 'Aashirvadd Glutten Free Flour Pouch',
+      category: 'Cookies',
+      image: '/images/p4.jpg',
+      price: 369,
+      brand: 'Vedaka',
+      description: 'Finest Aata Hand Made',
+    },
+
+    {
+      _id: '5',
+      name: 'Thums Up Soft Drink, 750ml Bottle',
+      category: 'Soft Drinks',
+      image: '/images/p5.jpg',
+      price: 34,
+      brand: 'Thums Up',
+      description: 'Soft Drinks To Enjoy during cricket season',
+    },
+
+    {
+      _id: '6',
+      name: 'Thums Up Soft Drink, 1.25L Bottle',
+      category: 'Soft Drinks',
+      image: '/images/p6.jpg',
+      price: 86,
+      brand: 'Thums Up',
+      description: 'Soft Drinks To Enjoy during cricket season',
+    },
+
+    {
+      _id: '7',
+      name: 'DiSano Peanut Butter,Non GMO, 1kg',
+      category: 'Butter',
+      image: '/images/p7.jpg',
+      price: 269,
+      brand: 'DiSano',
+      description: 'Hand Made Butter',
+    },
+
+    {
+      _id: '8',
+      name: 'Sunfeast Dark Fantasy Coffee Fills',
+      category: 'Butter',
+      image: '/images/p8.jpg',
+      price: 269,
+      brand: 'Dark Fantasy',
+      description: 'Hand made Biscuits',
+    },
+  ],
+};
+
+export default data;
