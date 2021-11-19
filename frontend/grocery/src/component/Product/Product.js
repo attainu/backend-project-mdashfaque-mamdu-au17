@@ -1,5 +1,6 @@
 import React from 'react';
 import './Product.css';
+
 function Product(props) {
   const { product } = props;
   return (
