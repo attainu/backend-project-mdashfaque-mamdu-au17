@@ -72,12 +72,13 @@ const data = {
 
     {
       _id: '8',
-      name: 'Sunfeast Dark Fantasy Coffee Fills',
+      name: 'Dabur Honey 100 % Pure World No.1',
       category: 'Butter',
       image: '/images/p8.jpg',
-      price: 269,
-      brand: 'Dark Fantasy',
-      description: 'Hand made Biscuits',
+      price: 178,
+      brand: 'Dabur',
+      description:
+        'Dabur Honey: 100% Pure worlds No1 Honey Brand with No Sugar Adulteration',
     },
   ],
 };
