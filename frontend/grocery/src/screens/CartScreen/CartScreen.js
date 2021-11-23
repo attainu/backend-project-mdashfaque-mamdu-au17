@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { addToCart } from '../../actions/cartActions';
+import { addToCart, removeFromCart } from '../../actions/cartActions';
 import MessageBox from '../../component/MessageBox/MessageBox';
 import './cartScreen.css';
 
@@ -23,16 +23,20 @@ function CartScreen(props) {
 
   const removeFromHandler = (id) => {
     //delete action
+    dispatch(removeFromCart(id));
   };
 
   const checkOutHandler = () => {
-    props.history.push('/signin');
+    props.history.push('/signin?redirect=shipping');
   };
 
   return (
     <div className="row top">
       <div className="col-2">
-        <h1>Shopping Cart({cartItems.length})</h1>
+        <h1>
+          Shopping Cart
+          {cartItems.length > 0 ? <span>({cartItems.length})</span> : ''}
+        </h1>
         {cartItems.length === 0 ? (
           <MessageBox>
             Cart is empty. <Link to="/">Shop Now</Link>
@@ -52,7 +56,7 @@ function CartScreen(props) {
                     </Link>
                   </div>
 
-                  <div className="min-30">
+                  <div className="product-name">
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                   </div>
 
@@ -79,6 +83,7 @@ function CartScreen(props) {
                     <button
                       type="button"
                       onClick={() => removeFromHandler(item.product)}
+                      className="remove-button"
                     >
                       Remove
                     </button>
@@ -96,7 +101,7 @@ function CartScreen(props) {
             <ul>
               <li>
                 <h2>
-                  Subtotal : ({cartItems.reduce((acc, cur) => acc + cur.qty, 0)}{' '}
+                  Subtotal ({cartItems.reduce((acc, cur) => acc + cur.qty, 0)}
                   items) : ₹
                   {cartItems.reduce((acc, cur) => acc + cur.price * cur.qty, 0)}
                 </h2>

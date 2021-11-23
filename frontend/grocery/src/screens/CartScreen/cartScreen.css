@@ -1,8 +1,13 @@
-.min-30 {
+.product-name {
   min-width: 30rem;
 }
 
 img.small {
   max-width: 5rem;
   width: 100%;
+}
+
+.remove-button {
+  background-color: #f02020;
+  color: #ffffff;
 }
