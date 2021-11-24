@@ -1,7 +1,22 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'Ashfaque',
+      email: 'admin@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: true,
+    },
+    {
+      name: 'AshuUser',
+      email: 'user@example.com',
+      password: bcrypt.hashSync('1234', 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
-      _id: '1',
       name: 'Dark Fantasy Choco Fills',
       category: 'Cookies',
       image: '/images/p1.jpg',
@@ -11,7 +26,6 @@ const data = {
     },
 
     {
-      _id: '2',
       name: 'Sunfeast Dark Fantasy Coffee Fills',
       category: 'Cookies',
       image: '/images/p2.jpg',
@@ -21,7 +35,6 @@ const data = {
     },
 
     {
-      _id: '3',
       name: 'Ashirvaad Atta with Multigrains, 5kg',
       category: 'Aata',
       image: '/images/p3.jpg',
@@ -31,7 +44,6 @@ const data = {
     },
 
     {
-      _id: '4',
       name: 'Aashirvadd Glutten Free Flour Pouch',
       category: 'Cookies',
       image: '/images/p4.jpg',
@@ -41,7 +53,6 @@ const data = {
     },
 
     {
-      _id: '5',
       name: 'Thums Up Soft Drink, 750ml Bottle',
       category: 'Soft Drinks',
       image: '/images/p5.jpg',
@@ -51,7 +62,6 @@ const data = {
     },
 
     {
-      _id: '6',
       name: 'Thums Up Soft Drink, 1.25L Bottle',
       category: 'Soft Drinks',
       image: '/images/p6.jpg',
@@ -61,7 +71,6 @@ const data = {
     },
 
     {
-      _id: '7',
       name: 'DiSano Peanut Butter,Non GMO, 1kg',
       category: 'Butter',
       image: '/images/p7.jpg',
@@ -71,7 +80,6 @@ const data = {
     },
 
     {
-      _id: '8',
       name: 'Dabur Honey 100 % Pure World No.1',
       category: 'Butter',
       image: '/images/p8.jpg',
