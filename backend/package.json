@@ -5,7 +5,7 @@
   "description": "Hello coder",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch backend --exec node --experimental-modules backend/server.js"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +20,11 @@
   "homepage": "https://github.com/attainu/backend-project-mdashfaque-mamdu-au17#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
-    "dotenv": "^10.0.0",
+    "config": "^3.3.6",
+    "dotenv": "^8.6.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.13"
   },
   "devDependencies": {
