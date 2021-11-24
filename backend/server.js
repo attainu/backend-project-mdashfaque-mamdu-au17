@@ -1,10 +1,17 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
+
 import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
 
-const app = express();
+dotenv.config();
 
+const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// console.log(DB_CONNECTION);
 try {
   mongoose.connect(
     'mongodb+srv://md_ashfaque:MOg3j2jcKpnV1k2l@cluster0.czzou.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
