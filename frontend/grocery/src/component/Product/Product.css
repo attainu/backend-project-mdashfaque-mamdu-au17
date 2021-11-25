@@ -36,6 +36,7 @@ img.medium {
 .price {
   font-size: 2rem;
   color: red;
+  text-align:center;
 }
 
 .price span {
