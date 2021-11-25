@@ -50,7 +50,7 @@ function App() {
             )}
           </div>
         </header>
-
+    
         <main>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen}></Route>
