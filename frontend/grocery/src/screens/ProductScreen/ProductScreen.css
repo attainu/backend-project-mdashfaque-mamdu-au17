@@ -40,7 +40,8 @@ button.block {
 }
 
 img.large {
-  width: 50%;
+  width: 35%;
+  margin-left: 80px;
 }
 
 .col-1 {
@@ -73,4 +74,22 @@ img.large {
 
 .price span {
   font-size: 1.5rem;
+}
+
+
+link .btn{
+  color: white;
+  
+}
+
+
+.go_bck_btn{
+ 
+  background-color: white;
+  display: inline-block;
+  /* border: 1px solid rgb(11,114,133); */
+  padding: 5px;
+  margin:10px 5px;
+
+  
 }
