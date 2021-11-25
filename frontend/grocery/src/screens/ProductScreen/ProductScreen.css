@@ -10,6 +10,7 @@ li {
 
 select {
   margin-bottom: 1rem;
+  margin-right: 8px;
   background-color: #e3fafc;
 }
 select,
@@ -70,6 +71,7 @@ img.large {
 .price {
   font-size: 2rem;
   color: red;
+  margin-right:15px;
 }
 
 .price span {
