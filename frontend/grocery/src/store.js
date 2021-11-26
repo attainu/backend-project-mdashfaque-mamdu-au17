@@ -12,6 +12,10 @@ const initialState = {
     cartItems: localStorage.getItem('cartItems')
       ? JSON.parse(localStorage.getItem('cartItems'))
       : [],
+    // if delivery address is in the local storeage use it
+    deliveryAddress: localStorage.getItem('deliveryAddress')
+      ? JSON.parse(localStorage.getItem('deliveryAddress'))
+      : {},
   },
   userLogin: {
     userInfo: localStorage.getItem('userInfo')
