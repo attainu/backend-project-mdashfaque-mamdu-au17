@@ -11,3 +11,7 @@ img.small {
   background-color: #f02020;
   color: #ffffff;
 }
+
+img{
+  margin-left: 20px;
+}

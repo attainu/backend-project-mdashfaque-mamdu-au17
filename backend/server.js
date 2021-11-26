@@ -40,10 +40,6 @@ app.use('/api/users', userRouter);
 
 app.use('/api/products', productRouter);
 
-app.get('/', (req, res) => {
-  res.send('This is the Home page of API');
-});
-
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
   next();

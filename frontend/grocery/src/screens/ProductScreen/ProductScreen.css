@@ -10,6 +10,7 @@ li {
 
 select {
   margin-bottom: 1rem;
+  margin-right: 8px;
   background-color: #e3fafc;
 }
 select,
@@ -40,7 +41,8 @@ button.block {
 }
 
 img.large {
-  width: 50%;
+  width: 35%;
+  margin-left: 80px;
 }
 
 .col-1 {
@@ -69,12 +71,32 @@ img.large {
 .price {
   font-size: 2rem;
   color: red;
+  margin-right:15px;
 }
 
 .price span {
   font-size: 1.5rem;
 }
 
+<<<<<<< HEAD
 .dummy {
   font-size: xx-large;
+=======
+
+link .btn{
+  color: white;
+  
+}
+
+
+.go_bck_btn{
+ 
+  background-color: white;
+  display: inline-block;
+  /* border: 1px solid rgb(11,114,133); */
+  padding: 5px;
+  margin:10px 5px;
+
+  
+>>>>>>> 335a1352eec8bec03821d884b9c9ac4860668b74
 }

@@ -29,7 +29,10 @@ function ProductScreen(props) {
         <MessageBox variant="danger">{error}</MessageBox>
       ) : (
         <div>
-          <Link to="/">Go Back</Link>
+          <div className='go_bck_btn'>
+          <Link to="/" className='btn' >Go Back</Link>
+            
+          </div>
           <div className="row top">
             <div className="col-2">
               <img className="large" src={product.image} alt={product.name} />
