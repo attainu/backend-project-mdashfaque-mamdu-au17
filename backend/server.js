@@ -2,12 +2,19 @@ import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
 
+import cors from 'cors'
+
+
 import productRouter from './routers/productRouter.js';
 import userRouter from './routers/userRouter.js';
 
 dotenv.config();
 
 const app = express();
+
+app.use(cors())
+
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -24,7 +31,11 @@ try {
 } catch (e) {
   console.log('could not connect');
 }
-
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();
+  });
 app.use('/api/users', userRouter);
 
 app.use('/api/products', productRouter);
