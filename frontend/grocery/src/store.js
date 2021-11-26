@@ -16,6 +16,7 @@ const initialState = {
     deliveryAddress: localStorage.getItem('deliveryAddress')
       ? JSON.parse(localStorage.getItem('deliveryAddress'))
       : {},
+    paymentMethod: 'Cash on delivery',
   },
   userLogin: {
     userInfo: localStorage.getItem('userInfo')
