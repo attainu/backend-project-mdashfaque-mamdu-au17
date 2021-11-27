@@ -1,6 +1,7 @@
 import { createStore, compose, applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import { cartReducer } from './reducers/cartReducers';
+import { orderCreateReducer } from './reducers/orderReducers';
 import {
   productDetailsReducer,
   productListReducer,
@@ -12,6 +13,11 @@ const initialState = {
     cartItems: localStorage.getItem('cartItems')
       ? JSON.parse(localStorage.getItem('cartItems'))
       : [],
+    // if delivery address is in the local storeage use it
+    deliveryAddress: localStorage.getItem('deliveryAddress')
+      ? JSON.parse(localStorage.getItem('deliveryAddress'))
+      : {},
+    paymentMethod: 'Cash on delivery',
   },
   userLogin: {
     userInfo: localStorage.getItem('userInfo')
@@ -26,6 +32,7 @@ const reducer = combineReducers({
   cart: cartReducer,
   userLogin: userLoginReducer,
   userSignup: userSignupReducer,
+  orderCreate: orderCreateReducer,
 });
 
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
