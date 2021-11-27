@@ -46,7 +46,7 @@ function PlaceorderScreen(props) {
                 <h2>Shipping Details</h2>
                 <p>
                   <strong>Name: </strong> {cart.deliveryAddress.fullName} <br />
-                  <strong>Address: </strong> {cart.deliveryAddress.address}, {' '}
+                  <strong>Address: </strong> {cart.deliveryAddress.address},{' '} {' '}
                   {cart.deliveryAddress.pincode}, {cart.deliveryAddress.city}{' '}
                   <br />
                   <strong>Mobile Number: </strong>
