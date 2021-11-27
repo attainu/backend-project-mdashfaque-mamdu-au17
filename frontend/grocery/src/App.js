@@ -6,6 +6,7 @@ import CartScreen from './screens/CartScreen/CartScreen';
 import DeliveryAddressScreen from './screens/DeliveryAddressScreen/DeliveryAddressScreen';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import LoginScreen from './screens/LoginScreen/LoginScreen';
+import OrderScreen from './screens/OrderScreen/OrderScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen/PaymentMethodScreen';
 import PlaceorderScreen from './screens/PlaceorderScreen/PlaceorderScreen';
 import ProductScreen from './screens/ProductScreen/ProductScreen';
@@ -62,6 +63,7 @@ function App() {
           <Route path="/shipping" component={DeliveryAddressScreen}></Route>
           <Route path="/payment" component={PaymentMethodScreen}></Route>
           <Route path="/placeorder" component={PlaceorderScreen}></Route>
+          <Route path={`/order`} component={OrderScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
 
