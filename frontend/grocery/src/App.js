@@ -7,6 +7,7 @@ import DeliveryAddressScreen from './screens/DeliveryAddressScreen/DeliveryAddre
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import LoginScreen from './screens/LoginScreen/LoginScreen';
 import PaymentMethodScreen from './screens/PaymentMethodScreen/PaymentMethodScreen';
+import PlaceorderScreen from './screens/PlaceorderScreen/PlaceorderScreen';
 import ProductScreen from './screens/ProductScreen/ProductScreen';
 import SignUpScreen from './screens/SignUpScreen/SignUpScreen';
 
@@ -52,7 +53,7 @@ function App() {
             )}
           </div>
         </header>
-    
+
         <main>
           <Route path="/cart/:id?" component={CartScreen}></Route>
           <Route path="/product/:id" component={ProductScreen}></Route>
@@ -60,6 +61,7 @@ function App() {
           <Route path="/signup" component={SignUpScreen}></Route>
           <Route path="/shipping" component={DeliveryAddressScreen}></Route>
           <Route path="/payment" component={PaymentMethodScreen}></Route>
+          <Route path="/placeorder" component={PlaceorderScreen}></Route>
           <Route path="/" component={HomeScreen} exact></Route>
         </main>
 
@@ -70,4 +72,3 @@ function App() {
 }
 
 export default App;
-
