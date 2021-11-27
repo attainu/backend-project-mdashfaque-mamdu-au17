@@ -6,6 +6,7 @@ import {
   ORDER_CREATE_SUCCESS,
 } from '../constants/orderConstants';
 
+const apiRoot = 'https://grocery-bazar45.herokuapp.com';
 // we are gonna save this order in database
 export const createOrder = (order) => async (dispatch, getState) => {
   dispatch({ type: ORDER_CREATE_REQUEST, payload: order });
@@ -13,7 +14,7 @@ export const createOrder = (order) => async (dispatch, getState) => {
     const {
       userLogin: { userInfo },
     } = getState();
-    const { data } = await Axios.post('/api/orders', order, {
+    const { data } = await Axios.post(`${apiRoot}/api/orders`, order, {
       headers: {
         Authorization: `Bearer ${userInfo.token}`,
       },

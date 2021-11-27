@@ -6,8 +6,11 @@ import {
   CART_SAVE_PAYMENT_METHOD,
 } from '../constants/cartConstants';
 
+
+const apiRoot = 'https://grocery-bazar45.herokuapp.com';
+
 export const addToCart = (productId, qty) => async (dispatch, getState) => {
-  const { data } = await Axios.get(`/api/products/${productId}`);
+  const { data } = await Axios.get(`${apiRoot}/api/products/${productId}`);
   dispatch({
     type: CART_ADD_ITEM,
     payload: {

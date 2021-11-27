@@ -1,6 +1,5 @@
 {
   "name": "grocery",
-  "proxy": "https://grocery-bazar45.herokuapp.com",
   "engines": {
     "node": "v14.17.6"
   },
